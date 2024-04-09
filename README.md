@@ -6,6 +6,7 @@ This project focuses on developing a machine learning model to predict equipment
 ## Project Structure
 The project is organized as follows:
 
+```
 Predictive Maintenance Model/
 ├── data/
 │   ├── raw/
@@ -22,6 +23,7 @@ Predictive Maintenance Model/
 │   └── hgb_model.pkl
 ├── requirements.txt
 └── README.md
+```
 
 - **data/**: Contains the raw and preprocessed data files.
 - **notebooks/**: Houses the Jupyter Notebooks for data exploration and model development.
