@@ -3,7 +3,7 @@ from sklearn.preprocessing import OneHotEncoder
 
 def create_derived_features(df):
     # Calculate equipment age
-    df['Equipment Age'] = df['Tool wear [min]'] / 60  # Assuming minutes are converted to hours
+    df['Equipment Age'] = df['Tool wear [min]'] / 60  
 
     # Calculate vibration metrics
     df['Rotational Speed RMS'] = df['Rotational speed [rpm]'].rolling(window=10).std()
@@ -33,10 +33,10 @@ def engineer_features(df):
     return df
 
 # Load the preprocessed data
-df = pd.read_csv(r'CoDA\ML Projects\Predictive Maintance Model\data\processed\machine_failure_preprocessed.csv')
+df = pd.read_csv(r'..\data\processed\machine_failure_preprocessed.csv')
 
 # Engineer the features
 df = engineer_features(df)
 
 # Save the engineered features
-df.to_csv(r'CoDA\ML Projects\Predictive Maintance Model\data\processed\machine_failure_engineered.csv', index=False)
+df.to_csv(r'..\data\processed\machine_failure_engineered.csv', index=False)
