@@ -5,7 +5,7 @@ from sklearn.preprocessing import LabelEncoder
 import joblib
 
 # Load the engineered data
-df = pd.read_csv(r'CoDA\ML Projects\Predictive Maintance Model\data\processed\machine_failure_engineered.csv')
+df = pd.read_csv(r'..\data\processed\machine_failure_engineered.csv')
 
 # Encode the categorical variables
 label_encoder = LabelEncoder()
@@ -24,4 +24,4 @@ clf = HistGradientBoostingClassifier(random_state=42)
 clf.fit(X_train, y_train)
 
 # Save the trained model
-joblib.dump(clf, r'CoDA\ML Projects\Predictive Maintance Model\models\hgb_model.pkl')
+joblib.dump(clf, r'..\models\hgb_model.pkl')
