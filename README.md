@@ -7,7 +7,7 @@ This project focuses on developing a machine learning model to predict equipment
 The project is organized as follows:
 
 ```
-Predictive Maintenance Model/
+Predictive-Maintenance-Model/
 ├── data/
 │   ├── raw/
 │   └── processed/
