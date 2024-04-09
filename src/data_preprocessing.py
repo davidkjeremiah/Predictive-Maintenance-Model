@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the data
-df = pd.read_csv(r'CoDA\ML Projects\Predictive Maintance Model\data\raw\machine failure.csv')
+df = pd.read_csv(r'..\data\raw\machine failure.csv')
 
 # Check for missing values
 print(df.isnull().sum())
@@ -25,4 +25,4 @@ print(f"Number of duplicates: {df.duplicated().sum()}")
 # Since there are no duplicates, we can skip this step
 
 # Save the preprocessed data
-df.to_csv('CoDA\ML Projects\Predictive Maintance Model\data\processed\machine_failure_preprocessed.csv', index=False)
+df.to_csv('..\data\processed\machine_failure_preprocessed.csv', index=False)
