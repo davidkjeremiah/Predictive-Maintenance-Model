@@ -55,4 +55,4 @@ You can install the required dependencies by running the following command in yo
 8. The trained model is saved in the `models/` directory and can be used for deployment or further refinement.
 
 ## Contact
-For any questions or feedback, please reach out to [flasconnext@gmail.com].
+For any questions or feedback, please reach out to [flasconnect@gmail.com].
