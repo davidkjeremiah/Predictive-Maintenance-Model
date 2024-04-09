@@ -26,6 +26,7 @@ Predictive-Maintenance-Model/
 ```
 
 - **data/**: Contains the raw and preprocessed data files.
+- *Note: The machine_failure_engineered.csv file was too large to be included in the GitHub repository due to the 100MB size limit. Please contact the project maintainers for instructions on obtaining this processed data.*
 - **notebooks/**: Houses the Jupyter Notebooks for data exploration and model development.
 - **src/**: Holds the Python scripts for data preprocessing, feature engineering, model training, and model evaluation.
 - **models/**: Stores the trained machine learning model and evaluation graphs.
