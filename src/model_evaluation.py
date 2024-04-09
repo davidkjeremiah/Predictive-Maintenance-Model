@@ -7,10 +7,10 @@ import seaborn as sns
 from sklearn.preprocessing import LabelEncoder
 
 # Load the trained model
-clf = joblib.load(r'CoDA\ML Projects\Predictive Maintance Model\models\hgb_model.pkl')
+clf = joblib.load(r'..\models\hgb_model.pkl')
 
 # Load the test data
-df = pd.read_csv(r'CoDA\ML Projects\Predictive Maintance Model\data\processed\machine_failure_engineered.csv')
+df = pd.read_csv(r'..\data\processed\machine_failure_engineered.csv')
 
 # Encode the categorical variables
 label_encoder = LabelEncoder()
@@ -40,7 +40,7 @@ sns.heatmap(cm, annot=True, cmap='Blues')
 plt.title('Confusion Matrix')
 plt.xlabel('Predicted')
 plt.ylabel('Actual')
-plt.savefig(r'CoDA\ML Projects\Predictive Maintance Model\models\confusion_matrix.png')
+plt.savefig(r'..\models\confusion_matrix.png')
 
 # Plot the ROC curve and calculate the AUC
 fpr, tpr, _ = roc_curve(y_test, y_pred)
@@ -54,4 +54,4 @@ plt.xlabel('False Positive Rate')
 plt.ylabel('True Positive Rate')
 plt.title('Receiver Operating Characteristic (ROC) Curve')
 plt.legend(loc="lower right")
-plt.savefig(r'CoDA\ML Projects\Predictive Maintance Model\models\roc_curve.png')
+plt.savefig(r'..\models\roc_curve.png')
